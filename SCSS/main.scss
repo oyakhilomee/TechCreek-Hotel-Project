@@ -42,12 +42,12 @@ body {
 }
 
 .bg-overlay {
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.65);
   height: 100vmin;
 }
 
 .nav-lists {
-  margin-right: 98px;
+  //   margin-right: 130px;
   margin-top: 41px;
 }
 
@@ -66,8 +66,26 @@ body {
   height: 40px;
   width: 200px;
   background-color: $color-one;
-  margin: 51px 0 0 0;
+  margin-top: 51px;
 }
+
+.btn-covid {
+  background-color: $color-two;
+  height: 45px;
+  width: 220px;
+}
+
+.rounded-circle {
+  height: 15px;
+  width: 15px;
+  border: 1px solid $color-three;
+  margin-top: 10px;
+}
+
+.circle-one {
+  background-color: $color-three;
+}
+
 .welcome {
   font-size: 27px;
   font-weight: 400;
@@ -82,7 +100,7 @@ body {
 }
 
 .horizontal {
-  width: 500px;
+  width: 350px;
   border: 0.5px solid $color-three;
   //   border-radius: 0.5px;
   margin: auto;
