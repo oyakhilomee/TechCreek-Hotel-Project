@@ -1,1 +1,85 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+*,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #fe7401;
+  font-weight: bold;
+}
+
+.nav-one {
+  font-weight: lighter;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  color: #ffffff;
+}
+
+#landing-page {
+  background-image: url(../Assets/Homepage/Background.png);
+  height: 100vmin;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-overlay {
+  background-color: rgba(0, 0, 0, 0.75);
+  height: 100vmin;
+}
+
+.nav-lists {
+  margin-right: 98px;
+  margin-top: 41px;
+}
+
+.brand-logo {
+  height: 72px;
+  width: 72px;
+  margin: 40px 0 0 0;
+}
+
+.img-calendar {
+  height: 24px;
+  width: 24px;
+}
+
+.btn-reservation {
+  height: 40px;
+  width: 200px;
+  background-color: #fe7401;
+  margin: 51px 0 0 0;
+}
+
+.welcome {
+  font-size: 27px;
+  font-weight: 400;
+}
+
+.kigoma {
+  font-family: "Lobster", cursive;
+  font-size: 96px;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0px 0 0px 0;
+}
+
+.horizontal {
+  width: 500px;
+  border: 0.5px solid #ffffff;
+  margin: auto;
+}
+/*# sourceMappingURL=main.css.map */
