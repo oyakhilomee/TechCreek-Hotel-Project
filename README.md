@@ -1,3 +1,3 @@
 Bootcamp Project
 
-![Screen](/Assets/snapshot.jpg)
+![one](/Assets/one.jpg)
