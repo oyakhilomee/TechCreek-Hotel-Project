@@ -1,4 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@font-face {
+  font-family: "Dubai";
+  src: url("../Assets/Fonts/Dubai-Bold.tff");
+  src: url("../Assets/Fonts/Dubai-Medium.ttf");
+  src: url("../Assets/Fonts/Dubai-Regular.ttf");
+  src: url("../Assets/Fonts/Dubai-Light.ttf");
+}
+
+@font-face {
+  font-family: "TFArrow";
+  src: url("../Assets/Fonts/TFArrow.tff");
+}
+
 *,
 html {
   margin: 0;
@@ -29,7 +42,7 @@ body {
 }
 
 #landing-page {
-  background-image: url(../Assets/Homepage/Background.png);
+  background-image: url(../Assets/Images/Homepage/Background.png);
   height: 100vmin;
   background-position: center;
   background-size: cover;
@@ -86,8 +99,8 @@ body {
 }
 
 .kigoma {
-  font-family: "Lobster", cursive;
-  font-size: 96px;
+  font-family: TFArrow;
+  font-size: 76px;
   font-weight: 400;
   color: #ffffff;
   margin: 0px 0 0px 0;
