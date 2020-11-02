@@ -24,14 +24,14 @@
     <title>Hotel Project</title>
   </head>
   <body>
-    <header id="landing-page">
-      <div class="bg-overlay">
+    <header id="landing-page" class="vh-100">
+      <div class="bg-overlay vh-100">
         <div class="">
-          <nav class="d-flex justify-content-around">
-            <a href="" class="brand-logo"
-              ><img src="./Assets/Homepage/Logo.svg" alt=""
+          <nav class="d-md-flex justify-content-around">
+            <a href="" class="brand-logo d-none d-md-block"
+              ><img src="./Assets/Images/Homepage/Logo.svg" alt=""
             /></a>
-            <ul class="d-flex nav-lists">
+            <ul class="d-md-flex nav-lists">
               <li class="nav-link">
                 <a href="" class="nav-item nav-one">Rooms</a>
               </li>
@@ -55,18 +55,13 @@
             </button>
           </nav>
           <button
-            class="text-uppercase btn btn-covid rounded-0 mt-5 text-light font-weight-bold"
+            class="d-none d-md-block text-uppercase btn btn-covid rounded-0 mt-5 text-light font-weight-bold"
           >
             covid-19 information
           </button>
 
           <div>
             <!-- Beginning of landing page div-->
-            <div class="mt-3">
-              <div class="rounded-circle circle-one"></div>
-              <div class="rounded-circle"></div>
-              <div class="rounded-circle"></div>
-            </div>
 
             <div class="justify-content-center">
               <p class="welcome text-center">Welcome to</p>
@@ -90,6 +85,40 @@
       </div>
       <!-- End of landing page div-->
     </header>
+
+    <section class="vh-90">
+      <div class="containr d-lg-flex align-items-center mt-5">
+        <div class="img-one-text">
+          <h2 class="text-dark text-center">Rooms & Suites</h2>
+          <p class="text-dark text-center ml-5 mr-5 d-md-block">
+            A holistic approach to luxury living, the Kigoma offers 297 curated
+            rooms & suites that ensure that guests would never want, or need, to
+            leave. Guests are invited to customize their luxury stay with a
+            selection of the most exquisite room offerings available, including
+            seven distinct suite categories featuring private and open floor
+            layouts as well as outdoor terraces and city and garden-view balcony
+            options.
+          </p>
+          <div class="button-div-class d-md-flex justify-content-center mb-3">
+            <button class="btn rounded-0 btn-outline-dark mr-3">
+              View Rooms & Suites
+            </button>
+            <button class="btn text-light rounded-0 book-now">Book Now</button>
+          </div>
+          <!-- End of button div-->
+        </div>
+        <!-- End of img-one-text -->
+        <div class="img-one-div d-md-flex justify-content-around mb-3 mr-4">
+          <img
+            src="./Assets/Images/Homepage/Image.png"
+            class="img-one ml-4"
+            alt=""
+          />
+        </div>
+        <!-- end of img-one div-->
+      </div>
+      <!-- End of container div-->
+    </section>
 
     <!-- jQuery and JS bundle w/ Popper.js -->
     <script

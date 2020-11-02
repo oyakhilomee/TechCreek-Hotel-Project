@@ -48,7 +48,6 @@ body {
 
 #landing-page {
   background-image: url(../Assets/Images/Homepage/Background.png);
-  height: 100vmin;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -88,17 +87,6 @@ body {
   width: 220px;
 }
 
-.rounded-circle {
-  height: 15px;
-  width: 15px;
-  border: 1px solid $color-three;
-  margin-top: 10px;
-}
-
-.circle-one {
-  background-color: $color-three;
-}
-
 .welcome {
   font-size: 27px;
   font-weight: 400;
@@ -117,4 +105,27 @@ body {
   border: 0.5px solid $color-three;
   //   border-radius: 0.5px;
   margin: auto;
+}
+
+.book-now {
+  background-color: $color-one;
+}
+
+.img-one {
+  height: 475px;
+  width: 545px;
+}
+
+.button-div-class {
+  @media screen and (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.img-one-div {
+  @media screen and (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
 }
