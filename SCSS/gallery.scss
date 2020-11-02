@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+$color-one: #fe7401;
+$color-two: #504026;
+$color-three: #ffffff;
+
+*,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.slider-img {
+  height: 500px;
+}
+
+.bg-overlay {
+  color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+}
+
+.gallery-ima {
+  height: 220px;
+  width: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media screen and (max-width: 992px) {
+    height: 240px;
+    width: 480px;
+    width: 100%;
+    max-width: 95%;
+    margin: 0 auto;
+  }
+}

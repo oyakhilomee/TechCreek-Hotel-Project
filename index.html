@@ -39,7 +39,9 @@
                 <a href="" class="nav-item nav-one">Facilities</a>
               </li>
               <li class="nav-link">
-                <a href="" class="nav-item nav-one">Gallery</a>
+                <a href="./Pages/gallery.html" class="nav-item nav-one"
+                  >Gallery</a
+                >
               </li>
               <li class="nav-link">
                 <a href="" class="nav-item nav-one">About Us</a>
@@ -60,10 +62,15 @@
             covid-19 information
           </button>
 
-          <div>
+          <div class="container landing-parent row">
             <!-- Beginning of landing page div-->
+            <div class="circle-div col-6">
+              <div class="round-circle circle-one"></div>
+              <div class="round-circle circle-two"></div>
+              <div class="round-circle circle-three"></div>
+            </div>
 
-            <div class="justify-content-center">
+            <div class="landing justify-content-center">
               <p class="welcome text-center">Welcome to</p>
               <p class="kigoma text-center font-weight-bold text-uppercase">
                 Kigoma
@@ -72,13 +79,15 @@
               <p class="text-center font-weight-light text-uppercase">
                 Enjoy your stay
               </p>
-            </div>
-            <div class="d-flex justify-content-center down-arrow mt-5">
-              <img
-                src="./Assets/Images/Homepage/Down Arrow.svg"
-                class=""
-                alt=""
-              />
+              <div class="d-flex justify-content-center down-arrow mt-5">
+                <a href="#section-two">
+                  <img
+                    src="./Assets/Images/Homepage/Down Arrow.svg"
+                    class=""
+                    alt=""
+                  />
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -86,8 +95,8 @@
       <!-- End of landing page div-->
     </header>
 
-    <section class="vh-90">
-      <div class="containr d-lg-flex align-items-center mt-5">
+    <section id="section-two" class="vh-100">
+      <div class="d-lg-flex section-two align-items-center mt-5">
         <div class="img-one-text">
           <h2 class="text-dark text-center">Rooms & Suites</h2>
           <p class="text-dark text-center ml-5 mr-5 d-md-block">
@@ -122,22 +131,24 @@
 
     <section class="vh-100">
       <h3 class="text-dark text-center mt-5 mb-4">Popular offerings</h3>
-      <div class="section-three row">
+      <div class="section-three row mb-5">
         <div class="col-lg-4">
-          <img
-            src="./Assets/Images/Homepage/Garden Premier.png"
-            alt=""
-            class="garden-suite suite"
-          />
-          <p class="text-dark font-weight-bold suite-name">Garden Premier</p>
-          <p class="text-dark">
-            Pleasant room, classic style king size bed, carpeted, wooden or
-            tiled floors with a choice of pool or city view
-          </p>
+          <div>
+            <img
+              src="./Assets/Images/Homepage/Garden Premier.png"
+              alt=""
+              class="garden-suite suite"
+            />
+            <p class="text-dark font-weight-bold suite-name">Garden Premier</p>
+            <p class="text-dark suite-text">
+              Pleasant room, classic style king size bed, carpeted, wooden or
+              tiled floors with a choice of pool or city view
+            </p>
+          </div>
           <div class="d-lg-flex justify-content-between">
-            <p class="text-dark">From ₦ 40,000/night</p>
+            <p class="text-dark room-price">From ₦ 40,000/night</p>
             <button
-              class="btn border-0 text-light rounded-0 btn-outline-dark orange-bg"
+              class="cta-btn btn border-0 text-light rounded-0 btn-outline-dark orange-bg"
             >
               Book Now
             </button>
@@ -150,18 +161,18 @@
           <img
             src="./Assets/Images/Homepage/Family Suite.png"
             alt=""
-            class="family-suite suite"
+            class="family-suite suite image-responsive"
           />
           <p class="text-dark font-weight-bold suite-name">Family Suite</p>
-          <p class="text-dark">
+          <p class="text-dark suite-text">
             Spacious bedroom with king size bed and adjoining small bedroom with
             small working area, a choice of a single bed or two and a restroom.
             Perfect for family.
           </p>
           <div class="d-lg-flex justify-content-between">
-            <p class="text-dark">From ₦ 50,000/night</p>
+            <p class="text-dark room-price">From ₦ 50,000/night</p>
             <button
-              class="btn border-0 text-light rounded-0 btn-outline-dark orange-bg"
+              class="cta-btn btn border-0 text-light rounded-0 btn-outline-dark orange-bg"
             >
               Book Now
             </button>
@@ -177,16 +188,16 @@
             class="governor-suite suite"
           />
           <p class="text-dark font-weight-bold suite-name">Governor's Suite</p>
-          <p class="text-dark">
+          <p class="text-dark suite-text">
             Classy master bedroom with a king size bed and jacuzzi with a choice
             of pool or park view, two sitting rooms, one of which has a mini
             bar, in addition to a guest restroom and a complimentary access to a
             private lounge that opens daily from 7 a.m. till 10 p.m.
           </p>
           <div class="d-lg-flex justify-content-between">
-            <p class="text-dark">From ₦ 170,000/night</p>
+            <p class="text-dark room-price">From ₦ 170,000/night</p>
             <button
-              class="book-now btn border-0 text-light rounded-0 btn-outline-dark orange-bg"
+              class="cta-btn book-now btn border-0 text-light rounded-0 btn-outline-dark orange-bg"
             >
               Book Now
             </button>

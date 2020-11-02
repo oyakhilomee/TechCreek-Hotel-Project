@@ -92,18 +92,51 @@ body {
   font-weight: 400;
 }
 
+.down-arrow {
+  background-color: transparent;
+  border: none;
+}
+
+.circle-div {
+  margin-top: 40px;
+}
+
+.round-circle {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 1px solid $color-three;
+  @media screen and (max-width: 992px) {
+    display: none;
+  }
+}
+
+.circle-one {
+  background-color: $color-three;
+}
+
+.landing {
+  @media screen and (max-width: 992px) {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
 .kigoma {
   font-family: TFArrow;
   font-size: 76px;
   font-weight: 400;
   color: $color-three;
-  margin: 0px 0 0px 0;
+  @media screen and (max-width: 992px) {
+    text-align: center;
+  }
 }
 
 .horizontal {
   width: 350px;
   border: 0.5px solid $color-three;
-  //   border-radius: 0.5px;
   margin: auto;
 }
 
@@ -147,8 +180,42 @@ body {
 }
 
 .suite-name {
+  font-size: 25px;
+  margin-top: 20px;
   @media screen and (max-width: 992px) {
     text-align: center;
     margin-top: 20px;
   }
+}
+
+.image-responsive {
+  margin: 0 auto;
+}
+
+.suite-text {
+  @media screen and (max-width: 992px) {
+    width: 100%;
+    max-width: 88%;
+    margin: 0 auto;
+  }
+}
+
+.room-price {
+  font-weight: bolder;
+  @media screen and (max-width: 992px) {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+.cta-btn {
+  @media screen and (max-width: 992px) {
+    margin: 0 auto;
+  }
+}
+
+.section-two {
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
 }
