@@ -1,3 +1,3 @@
-Bootcamp Project
+## Hotel Project
 
-![one](/Assets/one.jpg)
+![Home Screen](/Assets/home.png)
