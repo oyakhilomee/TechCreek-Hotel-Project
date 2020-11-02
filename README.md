@@ -1,3 +1,3 @@
 ## Hotel Project
 
-![Home Screen](/Assets/home.png)
+![Home Screen](/Assets/Images/build.PNG)
