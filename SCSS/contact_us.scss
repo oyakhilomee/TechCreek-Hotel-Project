@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+$color-one: #fe7401;
+$color-two: #504026;
+$color-three: #ffffff;
+
+@font-face {
+  font-family: "Dubai";
+  src: url("../Assets/Fonts/Dubai-Bold.tff");
+  src: url("../Assets/Fonts/Dubai-Medium.ttf");
+  src: url("../Assets/Fonts/Dubai-Regular.ttf");
+  src: url("../Assets/Fonts/Dubai-Light.ttf");
+}
+
+@font-face {
+  font-family: "TFArrow";
+  src: url("../Assets/Fonts/TFArrow.tff");
+}
+
+*,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $color-two;
+}
+
+a:hover {
+  text-decoration: none;
+  color: $color-one;
+  font-weight: bold;
+}
+
+.nav-one {
+  font-weight: lighter;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  color: $color-three;
+}
+
+.nav-lists {
+  //   margin-right: 130px;
+  margin-top: 41px;
+}
+
+.brand-logo {
+  height: 72px;
+  width: 72px;
+  margin: 40px 0 0 0;
+}
+
+.img-calendar {
+  height: 24px;
+  width: 24px;
+}
+
+.btn-reservation {
+  height: 40px;
+  width: 200px;
+  background-color: $color-one;
+  margin-top: 51px;
+}
+
+#googleMap {
+  //   background-color: blue;
+  width: 50%;
+  height: 400px;
+}
+
+.form-div {
+  //   background-color: green;
+  width: 100%;
+
+  flex: 1;
+}
+
+.form-one {
+  //   background-color: blue;
+  width: 70%;
+}
+
+.input-bg {
+  background-color: #f0f0f0;
+}
+
+.submit-btn {
+  background-color: $color-one;
+}
