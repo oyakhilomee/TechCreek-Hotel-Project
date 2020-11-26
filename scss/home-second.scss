@@ -1,0 +1,105 @@
+html {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+li:hover {
+  list-style: none;
+}
+#contact-us-home {
+  background-image: url(/Assets/homepage/background-contact-div.png);
+  height: 45rem;
+}
+
+// Start of feel-free-to-contact-us styling
+
+.strong {
+  font-weight: bold;
+}
+
+#feel-free-to-contact-us {
+  padding-bottom: 4rem;
+}
+
+.feel-free-heading-text {
+  text-align: center;
+  font-size: 4rem;
+}
+
+#feel-free-to-contact-us {
+  background-color: red;
+}
+
+.feel-free-container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: inherit;
+    // padding-top: 0;
+  }
+}
+
+.feel-free-left {
+  background-color: blue;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 37.3%;
+  }
+}
+
+.feel-free-center {
+  background-color: green;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    width: 30.3%;
+  }
+}
+
+.feel-free-right {
+  background-color: yellow;
+  @media screen and (min-width: 768px) {
+    width: 31.3%;
+  }
+  .li-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width: 1120px) {
+      display: flex;
+      justify-content: center;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+}
+
+.socialiconsdiv {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+  }
+  .fab {
+    padding-right: 1rem;
+  }
+}
