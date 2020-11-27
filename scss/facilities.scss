@@ -1,3 +1,58 @@
-body {
-  color: green;
+html {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+li:hover {
+  list-style: none;
+}
+
+// Start of navigation section styliing
+
+.navig {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 1rem;
+  }
+}
+
+.navli {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.nav-a {
+  padding: 1rem;
+}
+
+.nav-a:hover {
+  color: #fe7401;
+}
+
+.reservation-btn {
+  padding: 0.6rem 0.9rem;
+  background-color: #fe7401;
+  color: #f0f0f0;
+  border: none;
+
+  .reservation-btn:hover {
+    cursor: pointer;
+  }
 }
