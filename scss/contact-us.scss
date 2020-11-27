@@ -1,0 +1,208 @@
+html {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+li:hover {
+  list-style: none;
+}
+
+// Start of contact-us-landing section styling
+
+.contact-map-img {
+  width: 32rem;
+  max-width: 90%;
+  height: 25rem;
+  object-fit: cover;
+}
+
+.contact-us-input-submit-btn {
+  padding: 0.6rem 0.8rem;
+  background-color: #fe7401;
+  border: none;
+  margin-top: 1rem;
+  color: #f0f0f0;
+}
+
+// #FE7401;
+//  #F0F0F0;
+//  #F0F0F0;
+
+.contact-us-landing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  @media screen and (min-width: 768px) {
+    height: 100vmin;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    // background-color: red;
+  }
+  .contact-us-map {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width: 768px) {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      //   background-color: green;
+    }
+  }
+
+  .contact-us-landing-form {
+    @media screen and (min-width: 768px) {
+      width: 50%;
+      //   background-color: yellow;
+    }
+
+    .be-in {
+      font-size: 1.8rem;
+    }
+
+    .contact-input-div {
+      //   background-color: blue;
+      width: 100%;
+      .input-type {
+        margin-top: 1rem;
+        padding: 0.5rem 0;
+        padding-left: 0.9rem;
+        width: 80%;
+        border: none;
+        background-color: #f0f0f0;
+      }
+    }
+  }
+}
+
+// Start of feel-free-to-contact-us  section styling
+
+.strong {
+  font-weight: bold;
+}
+
+#feel-free-to-contact-us {
+  padding-bottom: 4rem;
+}
+
+.feel-free-heading-text {
+  text-align: center;
+  font-size: 4rem;
+}
+
+#feel-free-to-contact-us {
+  //   background-color: green;
+}
+
+.feel-free-container {
+  //   background-color: red;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: inherit;
+    // padding-top: 0;
+  }
+}
+
+.feel-free-left {
+  //   background-color: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  //   padding-bottom: 1rem;
+  @media screen and (min-width: 868px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 37.3%;
+  }
+  .left-img {
+    width: 15%;
+  }
+
+  .feel-free-left-text {
+    // background-color: red;
+    padding-top: 1rem;
+    width: 75%;
+    margin: auto;
+    @media screen and (min-width: 768px) {
+      width: 80%;
+    }
+  }
+}
+
+.feel-free-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width: 600px) {
+    display: flex;
+    flex-direction: column;
+  }
+  @media screen and (min-width: 868px) {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 30.3%;
+  }
+}
+
+.feel-free-right {
+  @media screen and (min-width: 768px) {
+    width: 31.3%;
+  }
+  .li-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width: 1120px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+}
+
+.socialiconsdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+  }
+  .fab {
+    padding-right: 1rem;
+  }
+}

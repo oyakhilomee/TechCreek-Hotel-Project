@@ -5,6 +5,7 @@ html {
 
 a {
   text-decoration: none;
+  color: #000000;
 }
 
 a:hover {
@@ -18,12 +19,292 @@ li {
 li:hover {
   list-style: none;
 }
-#contact-us-home {
-  background-image: url(/Assets/homepage/background-contact-div.png);
-  height: 45rem;
+
+// Start of landing-page header  stylng
+
+#landing-page {
+  background-image: url(/Assets/homepage/Background.png);
+  height: 100vmin;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-// Start of feel-free-to-contact-us styling
+.bg-overlay {
+  height: 100vmin;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-a {
+  color: #f0f0f0;
+}
+
+// Start of rooms-and-suites section styling
+
+.rooms-and-suites-landing-container {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 4rem;
+  @media screen and (min-width: 768px) {
+    height: 80vmin;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    // background-color: red;
+  }
+}
+
+.rooms-and-suites-landing-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    // display: flex;
+  }
+}
+
+.rooms-and-suites-landing-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 50%;
+    max-width: 60%;
+    // background-color: green;
+    padding-left: 2rem;
+  }
+
+  .rooms-and-rates-header-text {
+    font-size: 1.5rem;
+  }
+
+  .rooms-and-rates-caption-text {
+    // background-color: red;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      text-align: start;
+      width: 100%;
+      max-width: 85%;
+    }
+  }
+}
+
+.book-now {
+  background-color: #fe7401;
+  padding: 0.7rem 1rem;
+  border: none;
+  color: #f0f0f0;
+}
+
+.btn-view-rooms {
+  padding: 0.6rem 0.8rem;
+  background-color: transparent;
+  border: 0.15rem solid #504026;
+  margin-bottom: 0.8rem;
+  margin-right: 1rem;
+  @media screen and (min-width: 768px) {
+    margin-right: 2rem;
+  }
+}
+
+.rooms-and-suites-landing-right {
+  @media screen and (min-width: 768px) {
+    width: 50%;
+    // background-color: yellow;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.rooms-and-suites-landing-img {
+  width: 29rem;
+  max-width: 90%;
+  height: 23rem;
+  object-fit: cover;
+}
+
+// Start of facilities-home section styling
+
+.img-facilities {
+  display: flex;
+  width: 100%;
+  max-width: 90%;
+  margin: auto;
+  @media screen and (min-width: 768px) {
+    width: 22rem;
+    max-width: 95%;
+    height: 18rem;
+    object-fit: cover;
+  }
+}
+
+.img-caption {
+  display: flex;
+  width: 100%;
+  max-width: 90%;
+  margin: auto;
+  margin-bottom: 2rem;
+  @media screen and (min-width: 768px) {
+    width: 89.3%;
+    max-width: 80%;
+  }
+}
+
+.img-caption-header {
+  //   display: flex;
+  width: 100%;
+  max-width: 90%;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    width: 89.3%;
+    max-width: 80%;
+    // text-align: center;
+  }
+}
+
+.img-gallery-area-one {
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    display: flex;
+  }
+}
+
+.img-gallery-area-two {
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    display: flex;
+  }
+}
+
+.img-div {
+  @media screen and (min-width: 768px) {
+    width: 33.3%;
+  }
+}
+
+// Start of message-manager-home section styling
+
+#message-manager-home {
+  //   background-color: red;
+  padding: 3rem 0;
+}
+
+.message-holder-home {
+  //   background-color: blue;
+  //   width: 100%;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.message-p {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.left-message-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.right-message-home {
+  //   background-color: green;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: start;
+    width: 60%;
+    max-width: 65%;
+    // background-color: yellow;
+  }
+}
+
+// Start of contact-us-home section styling
+
+#contact-us-home {
+  background-image: url(/Assets/homepage/background-contact-div.png);
+  height: 42rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-us-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  //   background-color: blue;
+  padding: 3rem 0;
+  width: 100%;
+}
+
+.contact-us-home-heading-text {
+  font-size: 2rem;
+}
+
+.form-home {
+  width: inherit;
+  max-width: 70%;
+  //   background-color: yellow;
+}
+
+.input-class {
+  margin-top: 1rem;
+  border: none;
+  padding: 0.4rem 0rem;
+  //   background-color: red;
+  width: 100%;
+  max-width: 70%;
+  margin: 1rem auto;
+}
+
+#input-text-home {
+  display: block;
+}
+
+#input-email-home {
+  display: block;
+}
+
+.input-submit-div {
+  display: flex;
+  justify-content: center;
+}
+
+.input-submit {
+  padding: 0.6rem 0.8rem;
+  background-color: #fe7401;
+  border: none;
+  margin-top: 1rem;
+  color: #f0f0f0;
+}
+
+// Start of feel-free-to-contact-us  section styling
 
 .strong {
   font-weight: bold;
@@ -38,11 +319,9 @@ li:hover {
   font-size: 4rem;
 }
 
-#feel-free-to-contact-us {
-  background-color: red;
-}
 
 .feel-free-container {
+  //   background-color: red;
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
@@ -54,27 +333,53 @@ li:hover {
 }
 
 .feel-free-left {
-  background-color: blue;
-  @media screen and (min-width: 768px) {
+  //   background-color: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  //   padding-bottom: 1rem;
+  @media screen and (min-width: 868px) {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-
     width: 37.3%;
+  }
+  .left-img {
+    width: 15%;
+  }
+
+  .feel-free-left-text {
+    // background-color: red;
+    padding-top: 1rem;
+    width: 75%;
+    margin: auto;
+    @media screen and (min-width: 768px) {
+      width: 80%;
+    }
   }
 }
 
 .feel-free-center {
-  background-color: green;
-  @media screen and (min-width: 768px) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width: 600px) {
+    display: flex;
+    flex-direction: column;
+  }
+  @media screen and (min-width: 868px) {
     display: flex;
     justify-content: space-around;
+    flex-direction: row;
     width: 30.3%;
   }
 }
 
 .feel-free-right {
-  background-color: yellow;
   @media screen and (min-width: 768px) {
     width: 31.3%;
   }
@@ -85,6 +390,7 @@ li:hover {
     align-items: center;
     @media screen and (min-width: 1120px) {
       display: flex;
+      flex-direction: row;
       justify-content: center;
       justify-content: space-around;
       align-items: center;
@@ -93,6 +399,11 @@ li:hover {
 }
 
 .socialiconsdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: flex-end;
