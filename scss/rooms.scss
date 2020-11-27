@@ -1,0 +1,200 @@
+html {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+li:hover {
+  list-style: none;
+}
+
+// Start of rooms-to-let-section styling
+
+.img-all {
+  display: flex;
+  width: 27rem;
+  max-width: 90%;
+  margin: auto;
+  object-fit: cover;
+  @media screen and (min-width: 768px) {
+    height: 22rem;
+    width: 19rem;
+    max-width: 90%;
+  }
+}
+
+.rooms {
+  @media screen and (min-width: 768px) {
+    width: 33.3%;
+  }
+}
+
+.rooms-caption {
+  width: 100%;
+  max-width: 90%;
+  display: flex;
+  //   background-color: green;
+  flex-direction: column;
+  margin: auto;
+  padding-bottom: 1rem;
+  @media screen and (min-width: 768px) {
+    width: 67.3%;
+    display: flex;
+    margin: auto;
+    // background-color: red;
+  }
+}
+
+.room-header-text {
+  width: 100%;
+  max-width: 80%;
+  display: flex;
+  //   background-color: green;
+  flex-direction: column;
+  margin: auto;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  @media screen and (min-width: 768px) {
+    width: 67.3%;
+    display: flex;
+    margin: auto;
+    // background-color: red;
+  }
+}
+
+.rooms-to-let-one {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.rooms-to-let-two {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+// Start of feel-free-to-contact-us  section styling
+
+.strong {
+  font-weight: bold;
+}
+
+#feel-free-to-contact-us {
+  padding-bottom: 4rem;
+}
+
+.feel-free-heading-text {
+  text-align: center;
+  font-size: 4rem;
+}
+
+#feel-free-to-contact-us {
+  //   background-color: green;
+}
+
+.feel-free-container {
+  //   background-color: red;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: inherit;
+    // padding-top: 0;
+  }
+}
+
+.feel-free-left {
+  //   background-color: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  //   padding-bottom: 1rem;
+  @media screen and (min-width: 868px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 37.3%;
+  }
+  .left-img {
+    width: 15%;
+  }
+
+  .feel-free-left-text {
+    // background-color: red;
+    padding-top: 1rem;
+    width: 75%;
+    margin: auto;
+    @media screen and (min-width: 768px) {
+      width: 80%;
+    }
+  }
+}
+
+.feel-free-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width: 600px) {
+    display: flex;
+    flex-direction: column;
+  }
+  @media screen and (min-width: 868px) {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 30.3%;
+  }
+}
+
+.feel-free-right {
+  @media screen and (min-width: 768px) {
+    width: 31.3%;
+  }
+  .li-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width: 1120px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+}
+
+.socialiconsdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+  }
+  .fab {
+    padding-right: 1rem;
+  }
+}
