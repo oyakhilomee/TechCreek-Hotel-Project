@@ -20,6 +20,15 @@ li:hover {
   list-style: none;
 }
 
+@font-face {
+  font-family: dubai;
+  src: url(/fonts/Dubai-Regular.ttf);
+}
+
+body {
+  font-family: dubai;
+}
+
 // Start of navigation section styliing
 
 .navig {
@@ -33,6 +42,7 @@ li:hover {
 }
 
 .navli {
+  display: none;
   @media screen and (min-width: 768px) {
     display: flex;
   }
@@ -105,7 +115,7 @@ li:hover {
   .landing-holder-left {
     display: none;
     @media screen and (min-width: 768px) {
-      width: 5%;
+      width: 2%;
       max-width: 50%;
       display: flex;
       flex-direction: column;
@@ -129,9 +139,14 @@ li:hover {
     }
   }
   .lander-holder-right {
+    // background-color: yellow;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     @media screen and (min-width: 768px) {
-      width: 95%;
-      // background-color: yellow;
+      width: 98%;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -140,13 +155,21 @@ li:hover {
     .horizon {
       width: 4rem;
     }
-    .kigoma-text {
-      font-size: 56px;
-    }
+
     .text-white {
       color: #fff;
     }
   }
+}
+
+@font-face {
+  font-family: tfarrow;
+  src: url(/fonts/TFArrow-Bold.ttf);
+}
+
+.kigoma-text {
+  font-size: 56px;
+  font-family: tfarrow;
 }
 
 // Start of rooms-and-suites section styling
