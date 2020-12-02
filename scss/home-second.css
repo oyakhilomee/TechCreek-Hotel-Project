@@ -153,7 +153,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .landing-holder .landing-holder-left {
-    width: 5%;
+    width: 2%;
     max-width: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -189,7 +189,6 @@ body {
 }
 
 .landing-holder .lander-holder-right {
-  background-color: yellow;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -208,7 +207,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .landing-holder .lander-holder-right {
-    width: 95%;
+    width: 98%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
