@@ -374,6 +374,117 @@ body {
      object-fit: cover;
 }
 
+.popular-heading-header-text {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .popular-offering-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: green;
+  }
+}
+
+.popular-offering-same {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .popular-offering-same {
+    width: 33.3%;
+  }
+}
+
+.popular-img-same {
+  width: 100%;
+  max-width: 90%;
+}
+
+.pricing-popular-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: green;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+}
+
+@media screen and (min-width: 768px) {
+  .pricing-popular-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    background-color: red;
+  }
+}
+
+.popular-img-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: blue;
+  height: 30rem;
+}
+
+.popular-caption-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 90%;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.pricing-btn {
+  background-color: #fe7401;
+  padding: 0.7rem 1rem;
+  border: none;
+  color: #f0f0f0;
+}
+
 .img-facilities {
   display: -webkit-box;
   display: -ms-flexbox;
