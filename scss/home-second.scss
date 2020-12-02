@@ -261,6 +261,79 @@ body {
   object-fit: cover;
 }
 
+// Start of popular offering section
+
+.popular-heading-header-text {
+  text-align: center;
+}
+
+.popular-offering-container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+  }
+}
+
+.popular-offering-same {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    width: 33.3%;
+  }
+}
+
+.popular-img-same {
+  width: 100%;
+  max-width: 90%;
+}
+
+.pricing-popular-div {
+  display: flex;
+  align-items: center;
+  background-color: green;
+  justify-content: space-between;
+  width: 90%;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    background-color: red;
+  }
+}
+
+.popular-img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // margin-top: 3rem;
+  background-color: blue;
+  height: 30rem;
+}
+
+.popular-caption-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 90%;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.pricing-btn {
+  background-color: #fe7401;
+  padding: 0.7rem 1rem;
+  border: none;
+  color: #f0f0f0;
+}
+
 // Start of facilities-home section styling
 
 .img-facilities {
