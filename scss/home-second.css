@@ -20,6 +20,12 @@ li:hover {
   list-style: none;
 }
 
+@media screen and (max-width: 768px) {
+  .d-none {
+    display: none;
+  }
+}
+
 @font-face {
   font-family: dubai;
   src: url(/fonts/Dubai-Regular.ttf);
@@ -27,6 +33,39 @@ li:hover {
 
 body {
   font-family: dubai;
+}
+
+.toggle-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-top: 1rem;
+  padding-right: 0.9rem;
+}
+
+@media screen and (min-width: 768px) {
+  .toggle-btn {
+    display: none;
+  }
+}
+
+.toggle-btn:hover {
+  color: #fe7401;
+  cursor: pointer;
+}
+
+.brand-logo-div-nav {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .brand-logo-div-nav {
+    display: contents;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -46,10 +85,6 @@ body {
   }
 }
 
-.navli {
-  display: none;
-}
-
 @media screen and (min-width: 768px) {
   .navli {
     display: -webkit-box;
@@ -61,6 +96,10 @@ body {
 .nav-a {
   padding: 1rem;
   color: #f0f0f0;
+}
+
+.nav-list {
+  padding-bottom: 0.6rem;
 }
 
 .nav-a:hover {
@@ -106,7 +145,13 @@ body {
   color: #f0f0f0;
   border: none;
   padding: 0.4rem 0.6rem;
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .covid {
+    margin-top: 2.5rem;
+  }
 }
 
 .landing-holder {
@@ -123,6 +168,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 50vh;
+  margin-bottom: 3rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -142,8 +189,6 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
   }
 }
 
@@ -224,12 +269,91 @@ body {
   }
 }
 
+.landing-holder .lander-holder-right .welcome-p {
+  font-size: 1.5rem;
+}
+
 .landing-holder .lander-holder-right .horizon {
-  width: 4rem;
+  width: 15rem;
 }
 
 .landing-holder .lander-holder-right .text-white {
   color: #fff;
+}
+
+.fase {
+  width: 60px;
+  display: block;
+  text-align: center;
+  font: normal 45px "FontAwesome";
+  line-height: 60px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.double-down:before {
+  content: "\f107";
+}
+
+.bounce {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .bounce {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.bounce {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  margin-left: -30px;
+  border-radius: 50%;
+  animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  -moz-animation: bounce 2s infinite;
+  -o-animation: bounce 2s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
 }
 
 @font-face {
@@ -238,7 +362,7 @@ body {
 }
 
 .kigoma-text {
-  font-size: 56px;
+  font-size: 3rem;
   font-family: tfarrow;
 }
 
@@ -255,6 +379,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .rooms-and-suites-landing-container {
+    margin-top: 0;
     height: 80vmin;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -282,6 +407,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .rooms-and-suites-landing-right {
+    margin-top: 0;
+  }
 }
 
 .rooms-and-suites-landing-left {
@@ -494,6 +626,134 @@ body {
   color: #f0f0f0;
 }
 
+.gallery-section-heading-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gallery-section-heading-div .gallery-header-one {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+
+.gallery-section-heading-div .gallery-header-t {
+  font-family: tfarrow;
+  font-size: 2rem;
+}
+
+.gallery-section-home {
+  margin: 3rem 0;
+}
+
+body,
+#slider,
+.wrap,
+.slide-content {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 85vh;
+  overflow-x: hidden;
+}
+
+.wrap {
+  position: relative;
+}
+
+.slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slide1 {
+  background-image: url("/Assets/rooms-and-rates/family-suite.png");
+}
+
+.slide2 {
+  background-image: url("/Assets/rooms-and-rates/garden-room.png");
+}
+
+.slide3 {
+  background-image: url("/Assets/rooms-and-rates/governors-suite.png");
+}
+
+.slide-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.slide-content span {
+  font-size: 5rem;
+  color: #fff;
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -35px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+#arrow-left {
+  border-width: 30px 40px 30px 0;
+  border-color: transparent #fff transparent transparent;
+  left: 0;
+  margin-left: 30px;
+}
+
+#arrow-left:hover {
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  border-color: transparent #574d4d transparent transparent;
+}
+
+#arrow-right {
+  border-width: 30px 0 30px 40px;
+  border-color: transparent transparent transparent #fff;
+  right: 0;
+  margin-right: 30px;
+}
+
+#arrow-right:hover {
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  border-color: transparent #574d4d;
+}
+
+.facilities-heading {
+  text-align: center;
+  font-size: 1.6rem;
+  font-family: tfarrow;
+}
+
 .img-facilities {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -591,6 +851,7 @@ body {
 .message-p {
   text-align: center;
   font-size: 2rem;
+  font-family: tfarrow;
 }
 
 .left-message-home {
@@ -692,6 +953,7 @@ body {
 
 .contact-us-home-heading-text {
   font-size: 2rem;
+  font-family: tfarrow;
 }
 
 .form-home {
@@ -702,10 +964,14 @@ body {
 .input-class {
   margin-top: 1rem;
   border: none;
-  padding: 0.4rem 0rem;
+  padding: 0.5rem 0rem;
   width: 100%;
   max-width: 70%;
   margin: 1rem auto;
+}
+
+.placeholder-center {
+  text-align: center;
 }
 
 #input-text-home {
@@ -743,7 +1009,14 @@ body {
 
 .feel-free-heading-text {
   text-align: center;
-  font-size: 4rem;
+  font-size: 3rem;
+  font-family: tfarrow;
+}
+
+@media screen and (min-width: 1200px) {
+  .feel-free-heading-text {
+    font-size: 4.5rem;
+  }
 }
 
 @media screen and (min-width: 768px) {

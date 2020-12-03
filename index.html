@@ -10,10 +10,6 @@
       crossorigin="anonymous"
     />
     <!-- JS slider-->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/keen-slider/keen-slider.min.css"
-    />
 
     <!-- SASS stylsheet-->
     <link rel="stylesheet" href="/scss/home-second.css" />
@@ -25,10 +21,15 @@
       <!-- Start of landing-page-->
       <div class="bg-overlay">
         <nav class="navig">
-          <a href="/index.html">
-            <img src="/Assets/homepage/Logo.svg" alt="" />
-          </a>
-          <ul class="navli">
+          <div class="brand-logo-div-nav">
+            <a href="/index.html">
+              <img src="/Assets/homepage/Logo.svg" alt="" />
+            </a>
+          </div>
+          <div class="brand-div toggle-btn" id="toggle-btn">
+            <i class="fa fa-bars fa-2x"></i>
+          </div>
+          <ul id="menu" class="navli d-none">
             <li class="nav-list rooms-nav">
               <a href="/pages/rooms.html" class="nav-a">Rooms</a>
             </li>
@@ -63,7 +64,16 @@
               <p class="kigoma-text text-white">KIGOMA</p>
               <hr class="horizon" />
               <p class="kigoma-enjoy text-white">ENJOY YOUR STAY</p>
-              <img src="/Assets/homepage/Down Arrow.svg" alt="" />
+              <div class="bounce">
+                <a href="#rooms-and-suites">
+                  <img
+                    src="/Assets/homepage/Down Arrow.svg"
+                    alt=""
+                    class="fase double-down"
+                  />
+                </a>
+              </div>
+              <!-- End of bounce div-->
             </div>
           </div>
         </div>
@@ -183,15 +193,37 @@
 
     <!-- Start of gallery-section -->
     <section id="gallery-section">
-      <div class="gallery-section-heading-div">
-        <p class="gallery-header-one">gallery</p>
-        <p class="gallery-header-t">Word-famous-luxury</p>
+      <div class="gallery-section-home">
+        <div class="gallery-section-heading-div">
+          <p class="gallery-header-one">gallery</p>
+          <p class="gallery-header-t">World Famous Luxury</p>
+        </div>
+
+        <div class="wrap">
+          <div id="arrow-left" class="arrow"></div>
+          <div id="slider">
+            <div class="slide slide1">
+              <div class="slide-content"></div>
+            </div>
+            <div class="slide slide2">
+              <div class="slide-content"></div>
+            </div>
+            <div class="slide slide3">
+              <div class="slide-content"></div>
+            </div>
+          </div>
+          <div id="arrow-right" class="arrow"></div>
+        </div>
       </div>
+      <!-- End of gallery-section-home-->
     </section>
     <!-- End of gallery-section-->
 
     <!-- Start of facilities-home section-->
     <section id="facilities-home">
+      <div class="facilities-heading-div">
+        <p class="facilities-heading">Facilities</p>
+      </div>
       <div class="img-gallery-area">
         <!-- Start of img-gallery-area-->
         <div class="img-gallery-area-one">
@@ -280,6 +312,7 @@
     </section>
     <!-- End of facilities-home section-->
 
+    <!-- Start of message-manaager-home section-->
     <section id="message-manager-home">
       <div class="message-home-div-cont">
         <div class="manager-message">
@@ -329,7 +362,7 @@
               name=""
               id="input-text-home"
               placeholder="*First Name"
-              class="input-class"
+              class="input-class placeholder-center"
             />
           </div>
           <div>
@@ -338,7 +371,7 @@
               name=""
               id="input-email-home"
               placeholder="*Email Address"
-              class="input-class"
+              class="input-class placeholder-center"
             />
           </div>
           <div class="input-submit-div">
@@ -413,6 +446,7 @@
       </div>
       <!-- End of feel-free-container-->
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/keen-slider/keen-slider.min.js"></script>
+    <script src="/scripts/toggle.js"></script>
+    <script src="/scripts/slider.js"></script>
   </body>
 </html>
