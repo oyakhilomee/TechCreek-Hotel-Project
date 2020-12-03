@@ -376,6 +376,7 @@ body {
 
 .popular-heading-header-text {
   text-align: center;
+  font-family: tfarrow;
 }
 
 @media screen and (min-width: 768px) {
@@ -389,7 +390,6 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: green;
   }
 }
 
@@ -425,7 +425,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: green;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -442,7 +441,6 @@ body {
             align-items: center;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    background-color: red;
   }
 }
 
@@ -456,8 +454,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: blue;
-  height: 30rem;
+  margin-top: 3rem;
 }
 
 .popular-caption-area {
@@ -472,6 +469,18 @@ body {
       -ms-flex-pack: start;
           justify-content: flex-start;
   width: 90%;
+  height: 33vmin;
+}
+
+@media screen and (max-width: 768px) {
+  .popular-caption-area-three {
+    height: 42vmin;
+  }
+}
+
+.popular-room-name {
+  font-family: tfarrow;
+  font-size: 1.2rem;
 }
 
 .font-bold {

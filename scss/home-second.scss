@@ -265,6 +265,7 @@ body {
 
 .popular-heading-header-text {
   text-align: center;
+  font-family: tfarrow;
 }
 
 .popular-offering-container {
@@ -272,7 +273,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: green;
+    // background-color: green;
   }
 }
 
@@ -295,7 +296,7 @@ body {
 .pricing-popular-div {
   display: flex;
   align-items: center;
-  background-color: green;
+  // background-color: green;
   justify-content: space-between;
   width: 90%;
   @media screen and (min-width: 768px) {
@@ -303,7 +304,7 @@ body {
     // justify-content: center;
     align-items: center;
     justify-content: space-around;
-    background-color: red;
+    // background-color: red;
   }
 }
 
@@ -311,9 +312,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  // margin-top: 3rem;
-  background-color: blue;
-  height: 30rem;
+  margin-top: 3rem;
+  // background-color: blue;
+  // height: 30rem;
 }
 
 .popular-caption-area {
@@ -321,6 +322,20 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   width: 90%;
+  height: 33vmin;
+  @media screen and (min-width: 768px) {
+  }
+}
+
+.popular-caption-area-three {
+  @media screen and (max-width: 768px) {
+    height: 42vmin;
+  }
+}
+
+.popular-room-name {
+  font-family: tfarrow;
+  font-size: 1.2rem;
 }
 
 .font-bold {
