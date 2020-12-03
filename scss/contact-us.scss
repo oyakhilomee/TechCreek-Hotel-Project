@@ -20,7 +20,45 @@ li:hover {
   list-style: none;
 }
 
+.d-none {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+@font-face {
+  font-family: dubai;
+  src: url(/fonts/Dubai-Regular.ttf);
+}
+
+body {
+  font-family: dubai;
+}
+
 // Start of navigation section styliing
+
+.toggle-btn {
+  display: flex;
+  color: rgb (0, 0, 0);
+  justify-content: flex-end;
+  padding-top: 1rem;
+  padding-right: 0.9rem;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.toggle-btn:hover {
+  color: #fe7401;
+  cursor: pointer;
+}
+
+.brand-logo-div-nav {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: contents;
+  }
+}
 
 .navig {
   @media screen and (min-width: 768px) {
@@ -46,11 +84,19 @@ li:hover {
   color: #fe7401;
 }
 
+.nav-list {
+  padding-bottom: 0.6rem;
+}
+
 .reservation-btn {
-  padding: 0.6rem 0.9rem;
-  background-color: #fe7401;
-  color: #f0f0f0;
-  border: none;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    padding: 0.6rem 0.9rem;
+    background-color: #fe7401;
+    color: #f0f0f0;
+    border: none;
+  }
 }
 
 .reservation-btn:hover {
@@ -60,10 +106,15 @@ li:hover {
 // Start of contact-us-landing section styling
 
 .contact-map-img {
-  width: 32rem;
-  max-width: 90%;
-  height: 25rem;
-  object-fit: cover;
+  margin-top: 3rem;
+  width: 100%;
+  max-width: 95%;
+  @media screen and (min-width: 769px) {
+    width: 100%;
+    max-width: 90%;
+    height: 25rem;
+    object-fit: cover;
+  }
 }
 
 .contact-us-input-submit-btn {
@@ -123,9 +174,13 @@ li:hover {
         margin-top: 1rem;
         padding: 0.5rem 0;
         padding-left: 0.9rem;
-        width: 80%;
+        width: 90%;
+        outline: none;
         border: none;
         background-color: #f0f0f0;
+        @media screen and (min-width: 768px) {
+          width: 70%;
+        }
       }
     }
   }
@@ -143,7 +198,11 @@ li:hover {
 
 .feel-free-heading-text {
   text-align: center;
-  font-size: 4rem;
+  font-size: 3rem;
+  font-family: tfarrow;
+  @media screen and (min-width: 768px) {
+    font-size: 4.5rem;
+  }
 }
 
 .feel-free-container {

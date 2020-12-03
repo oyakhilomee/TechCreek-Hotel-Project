@@ -20,14 +20,52 @@ li:hover {
   list-style: none;
 }
 
+.d-none {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+@font-face {
+  font-family: dubai;
+  src: url(/fonts/Dubai-Regular.ttf);
+}
+
+body {
+  font-family: dubai;
+}
+
 // Start of navigation section styliing
+
+.toggle-btn {
+  display: flex;
+  color: rgb(0, 0, 0);
+  justify-content: flex-end;
+  padding-top: 1rem;
+  padding-right: 0.9rem;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.toggle-btn:hover {
+  color: #fe7401;
+  cursor: pointer;
+}
+
+.brand-logo-div-nav {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: contents;
+  }
+}
 
 .navig {
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 1rem;
   }
 }
@@ -46,13 +84,213 @@ li:hover {
   color: #fe7401;
 }
 
-.reservation-btn {
-  padding: 0.6rem 0.9rem;
-  background-color: #fe7401;
-  color: #f0f0f0;
-  border: none;
+.nav-list {
+  padding-bottom: 0.6rem;
+}
 
-  .reservation-btn:hover {
-    cursor: pointer;
+.reservation-btn {
+  display: none;
+}
+
+// Start of facilities-landing
+
+.img-same {
+  width: 100%;
+  max-width: 90%;
+}
+
+.cta-btn-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: flex-start;
+    // background-color: yellow;
+  }
+}
+
+.img-caption-heading {
+  text-align: center;
+  font-family: tfarrow;
+  font-size: 1.5rem;
+  @media screen and(min-width:768px) {
+    text-align: start;
+  }
+}
+
+.facility-img-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-btn-same {
+  background-color: transparent;
+  border: none;
+  margin-left: 0.4rem;
+}
+
+.img-caption-area {
+  width: 100%;
+  max-width: 90%;
+  margin: auto;
+}
+
+.facilities-landing {
+  margin-top: 3rem;
+}
+
+.first-row-parent {
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background-color: red;
+  }
+  .first-row-div-left {
+    @media screen and (min-width: 768px) {
+      width: 50%;
+    }
+  }
+  .first-row-div-right {
+    @media screen and (min-width: 768px) {
+      width: 50%;
+    }
+  }
+}
+
+.second-row-parent {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background-color: green;
+  }
+  .second-row-div-left {
+    @media screen and (min-width: 768px) {
+      width: 50%;
+    }
+  }
+  .second-row-div-right {
+    @media screen and (min-width: 768px) {
+      width: 50%;
+    }
+  }
+}
+
+// Start of feel-free-to-contact-us  section styling
+
+.strong {
+  font-weight: bold;
+}
+
+#feel-free-to-contact-us {
+  padding-bottom: 4rem;
+}
+
+.feel-free-heading-text {
+  text-align: center;
+  font-size: 3rem;
+  font-family: tfarrow;
+  @media screen and (min-width: 1200px) {
+    font-size: 4.5rem;
+  }
+}
+
+.feel-free-container {
+  //   background-color: red;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: inherit;
+    // padding-top: 0;
+  }
+}
+
+.feel-free-left {
+  //   background-color: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  //   padding-bottom: 1rem;
+  @media screen and (min-width: 868px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 37.3%;
+  }
+  .left-img {
+    width: 15%;
+  }
+
+  .feel-free-left-text {
+    // background-color: red;
+    padding-top: 1rem;
+    width: 75%;
+    margin: auto;
+    @media screen and (min-width: 768px) {
+      width: 80%;
+    }
+  }
+}
+
+.feel-free-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width: 600px) {
+    display: flex;
+    flex-direction: column;
+  }
+  @media screen and (min-width: 868px) {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 30.3%;
+  }
+}
+
+.feel-free-right {
+  @media screen and (min-width: 768px) {
+    width: 31.3%;
+  }
+  .li-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width: 1120px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+}
+
+.socialiconsdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+  }
+  .fab {
+    padding-right: 1rem;
   }
 }

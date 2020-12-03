@@ -20,6 +20,44 @@ li:hover {
   list-style: none;
 }
 
+@media screen and (max-width: 768px) {
+  .d-none {
+    display: none;
+  }
+}
+
+@font-face {
+  font-family: dubai;
+  src: url(/fonts/Dubai-Regular.ttf);
+}
+
+body {
+  font-family: dubai;
+}
+
+.toggle-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: black;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-top: 1rem;
+  padding-right: 0.9rem;
+}
+
+@media screen and (min-width: 768px) {
+  .toggle-btn {
+    display: none;
+  }
+}
+
+.toggle-btn:hover {
+  color: #fe7401;
+  cursor: pointer;
+}
+
 @media screen and (min-width: 768px) {
   .navig {
     display: -webkit-box;
@@ -53,11 +91,34 @@ li:hover {
   color: #fe7401;
 }
 
+.nav-list {
+  padding-bottom: 0.6rem;
+}
+
+.brand-logo-div-nav {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .brand-logo-div-nav {
+    display: contents;
+  }
+}
+
 .reservation-btn {
-  padding: 0.6rem 0.9rem;
-  background-color: #fe7401;
-  color: #f0f0f0;
-  border: none;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .reservation-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0.6rem 0.9rem;
+    background-color: #fe7401;
+    color: #f0f0f0;
+    border: none;
+  }
 }
 
 .reservation-btn:hover {
@@ -71,6 +132,7 @@ li:hover {
   width: 27rem;
   max-width: 90%;
   margin: auto;
+  margin-top: 2rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -164,7 +226,14 @@ li:hover {
 
 .feel-free-heading-text {
   text-align: center;
-  font-size: 4rem;
+  font-family: tfarrow;
+  font-size: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .feel-free-heading-text {
+    font-size: 4rem;
+  }
 }
 
 @media screen and (min-width: 768px) {

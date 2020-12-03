@@ -5,6 +5,7 @@ html {
 
 a {
   text-decoration: none;
+  color: #000000;
 }
 
 a:hover {
@@ -14,13 +15,52 @@ a:hover {
 
 li {
   list-style: none;
+  color: #000000;
 }
 
 li:hover {
   list-style: none;
 }
 
+.d-none {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+@font-face {
+  font-family: dubai;
+  src: url(/fonts/Dubai-Regular.ttf);
+}
+
+body {
+  font-family: dubai;
+}
+
 // Start of navigation section styliing
+
+.toggle-btn {
+  display: flex;
+  color: black;
+  justify-content: flex-end;
+  padding-top: 1rem;
+  padding-right: 0.9rem;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.toggle-btn:hover {
+  color: #fe7401;
+  cursor: pointer;
+}
+
+.brand-logo-div-nav {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: contents;
+  }
+}
 
 .navig {
   @media screen and (min-width: 768px) {
@@ -42,17 +82,368 @@ li:hover {
   padding: 1rem;
 }
 
+.nav-list {
+  padding-bottom: 0.6rem;
+}
+
 .nav-a:hover {
   color: #fe7401;
 }
 
 .reservation-btn {
-  padding: 0.6rem 0.9rem;
-  background-color: #fe7401;
-  color: #f0f0f0;
-  border: none;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    padding: 0.6rem 0.9rem;
+    background-color: #fe7401;
+    color: #f0f0f0;
+    border: none;
+  }
 }
-
 .reservation-btn:hover {
   cursor: pointer;
+}
+
+// Start of Gallery section styling
+
+.gallery-section-heading-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .gallery-header-one {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+  }
+  .gallery-header-t {
+    font-family: tfarrow;
+    font-size: 2rem;
+  }
+}
+
+.gallery-section-home {
+  margin: 3rem 0;
+}
+
+body,
+#slider,
+.wrap,
+.slide-content {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 85vh;
+  overflow-x: hidden;
+}
+
+.wrap {
+  position: relative;
+}
+
+.slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slide1 {
+  background-image: url("/Assets/rooms-and-rates/family-suite.png");
+}
+.slide2 {
+  background-image: url("/Assets/rooms-and-rates/garden-room.png");
+}
+.slide3 {
+  background-image: url("/Assets/rooms-and-rates/governors-suite.png");
+}
+
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.slide-content span {
+  font-size: 5rem;
+  color: #fff;
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -35px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+#arrow-left {
+  border-width: 30px 40px 30px 0;
+  border-color: transparent #fff transparent transparent;
+  left: 0;
+  margin-left: 30px;
+}
+
+#arrow-left:hover {
+  transition: 1s ease-in-out;
+  border-color: transparent rgb(87, 77, 77) transparent transparent;
+}
+
+#arrow-right {
+  border-width: 30px 0 30px 40px;
+  border-color: transparent transparent transparent #fff;
+  right: 0;
+  margin-right: 30px;
+}
+
+#arrow-right:hover {
+  transition: 1s ease-in-out;
+  border-color: transparent rgb(87, 77, 77);
+}
+
+// Start of facilities-home section styling
+
+.facilities-heading {
+  text-align: center;
+  font-size: 1.6rem;
+  font-family: tfarrow;
+}
+
+.img-facilities {
+  display: flex;
+  width: 100%;
+  max-width: 90%;
+  margin: auto;
+  @media screen and (min-width: 768px) {
+    width: 22rem;
+    max-width: 95%;
+    height: 18rem;
+    object-fit: cover;
+  }
+}
+
+.img-caption {
+  display: flex;
+  width: 100%;
+  max-width: 90%;
+  margin: auto;
+  margin-bottom: 2rem;
+  @media screen and (min-width: 768px) {
+    width: 89.3%;
+    max-width: 80%;
+  }
+}
+
+.img-caption-header {
+  //   display: flex;
+  width: 100%;
+  max-width: 90%;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-family: tfarrow;
+  font-weight: bold;
+  font-size: 1.1rem;
+  @media screen and (min-width: 768px) {
+    width: 89.3%;
+    max-width: 80%;
+    // text-align: center;
+  }
+}
+
+.img-gallery-area-one {
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    display: flex;
+  }
+}
+
+.img-gallery-area-two {
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    display: flex;
+  }
+}
+
+.img-div {
+  @media screen and (min-width: 768px) {
+    width: 33.3%;
+  }
+}
+
+// Start of message-manager-home section styling
+
+#message-manager-home {
+  //   background-color: red;
+  padding: 3rem 0;
+}
+
+.message-holder-home {
+  //   background-color: blue;
+  //   width: 100%;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.message-p {
+  text-align: center;
+  font-size: 2rem;
+  font-family: tfarrow;
+}
+
+.left-message-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.right-message-home {
+  //   background-color: green;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: start;
+    width: 60%;
+    max-width: 65%;
+    // background-color: yellow;
+  }
+  .manager-name {
+    font-family: tfarrow;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+}
+
+// Start of feel-free-to-contact-us  section styling
+
+.strong {
+  font-weight: bold;
+}
+
+#feel-free-to-contact-us {
+  padding-bottom: 4rem;
+}
+
+.feel-free-heading-text {
+  text-align: center;
+  font-size: 3rem;
+  font-family: tfarrow;
+  @media screen and (min-width: 1200px) {
+    font-size: 4.5rem;
+  }
+}
+
+.feel-free-container {
+  //   background-color: red;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: inherit;
+    // padding-top: 0;
+  }
+}
+
+.feel-free-left {
+  //   background-color: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  //   padding-bottom: 1rem;
+  @media screen and (min-width: 868px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 37.3%;
+  }
+  .left-img {
+    width: 15%;
+  }
+
+  .feel-free-left-text {
+    // background-color: red;
+    padding-top: 1rem;
+    width: 75%;
+    margin: auto;
+    @media screen and (min-width: 768px) {
+      width: 80%;
+    }
+  }
+}
+
+.feel-free-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width: 600px) {
+    display: flex;
+    flex-direction: column;
+  }
+  @media screen and (min-width: 868px) {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 30.3%;
+  }
+}
+
+.feel-free-right {
+  @media screen and (min-width: 768px) {
+    width: 31.3%;
+  }
+  .li-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width: 1120px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+}
+
+.socialiconsdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+  }
+  .fab {
+    padding-right: 1rem;
+  }
 }
