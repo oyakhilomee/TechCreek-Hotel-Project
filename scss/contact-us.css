@@ -20,6 +20,54 @@ li:hover {
   list-style: none;
 }
 
+@media screen and (max-width: 768px) {
+  .d-none {
+    display: none;
+  }
+}
+
+@font-face {
+  font-family: dubai;
+  src: url(/fonts/Dubai-Regular.ttf);
+}
+
+body {
+  font-family: dubai;
+}
+
+.toggle-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: rgb 0, 0, 0;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-top: 1rem;
+  padding-right: 0.9rem;
+}
+
+@media screen and (min-width: 768px) {
+  .toggle-btn {
+    display: none;
+  }
+}
+
+.toggle-btn:hover {
+  color: #fe7401;
+  cursor: pointer;
+}
+
+.brand-logo-div-nav {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .brand-logo-div-nav {
+    display: contents;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .navig {
     display: -webkit-box;
@@ -53,11 +101,24 @@ li:hover {
   color: #fe7401;
 }
 
+.nav-list {
+  padding-bottom: 0.6rem;
+}
+
 .reservation-btn {
-  padding: 0.6rem 0.9rem;
-  background-color: #fe7401;
-  color: #f0f0f0;
-  border: none;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .reservation-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0.6rem 0.9rem;
+    background-color: #fe7401;
+    color: #f0f0f0;
+    border: none;
+  }
 }
 
 .reservation-btn:hover {
@@ -65,11 +126,19 @@ li:hover {
 }
 
 .contact-map-img {
-  width: 32rem;
-  max-width: 90%;
-  height: 25rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+  margin-top: 3rem;
+  width: 100%;
+  max-width: 95%;
+}
+
+@media screen and (min-width: 769px) {
+  .contact-map-img {
+    width: 100%;
+    max-width: 90%;
+    height: 25rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 
 .contact-us-input-submit-btn {
@@ -165,9 +234,16 @@ li:hover {
   margin-top: 1rem;
   padding: 0.5rem 0;
   padding-left: 0.9rem;
-  width: 80%;
+  width: 90%;
+  outline: none;
   border: none;
   background-color: #f0f0f0;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-us-landing-container .contact-us-landing-form .contact-input-div .input-type {
+    width: 70%;
+  }
 }
 
 .strong {
@@ -180,7 +256,14 @@ li:hover {
 
 .feel-free-heading-text {
   text-align: center;
-  font-size: 4rem;
+  font-size: 3rem;
+  font-family: tfarrow;
+}
+
+@media screen and (min-width: 768px) {
+  .feel-free-heading-text {
+    font-size: 4.5rem;
+  }
 }
 
 @media screen and (min-width: 768px) {

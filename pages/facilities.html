@@ -3,16 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="/scss/facilities.css" />
     <title>Facilities</title>
+  </head>
+  <body>
     <header id="landing-page">
       <!-- Start of landing-page-->
       <div class="bg-overlay">
         <nav class="navig">
-          <a href="/index.html">
-            <img src="/Assets/homepage/Logo.svg" alt="" />
-          </a>
-          <ul class="navli">
+          <div class="brand-logo-div-nav">
+            <a href="/index.html">
+              <img src="/Assets/homepage/Logo.svg" alt="" />
+            </a>
+          </div>
+          <div class="brand-div toggle-btn" id="toggle-btn">
+            <i class="fa fa-bars fa-2x"></i>
+          </div>
+          <ul id="menu" class="navli d-none">
             <li class="nav-list rooms-nav">
               <a href="/pages/rooms.html" class="nav-a">Rooms</a>
             </li>
@@ -32,6 +45,197 @@
         </nav>
       </div>
     </header>
-  </head>
-  <body></body>
+
+    <section id="facilities-landing">
+      <div class="facilities-landing">
+        <!-- Start of first-row-parent-->
+        <div class="first-row-parent">
+          <div class="first-row-div-left">
+            <div class="facility-img-div">
+            <img
+              src="/Assets/facilities/Restaurant-one.png"
+              alt=""
+              class="img-same"
+            />
+            </div>
+            <div class="img-caption-area img-caption-restuarant-div">
+              <p class="img-caption-heading img-caption-restuarant">
+                Restuarant
+              </p>
+              <p class="img-caption-heading-text img-caption-resturant-text">
+                Enjoy delicious meals and experience upscale fine dining at our
+                2-star Michelin restaurant and bar where we servie a variety of
+                mouthwatering local and intercontinental dishes.
+              </p>
+              <div class="cta-btn-div">
+                <i class="fas fa-arrow-right"></i>
+               <button class="cta-btn-same">View Gallery</button>
+              </div>
+              <!-- End of cta-btn-div-->
+            </div>
+            <!-- End of img-caption-area-->
+          </div>
+          <!-- End of first-row-div-left-->
+
+          <div class="first-row-div-right">
+            <div class="facility-img-div">
+            <img
+              src="/Assets/facilities/Swimming-Pool-one.png"
+              alt=""
+              class="img-same"
+            />
+            </div><!-- End of facilities-img-div-->
+            <div class="img-caption-area img-caption-swimming-div">
+              <p class="img-caption-heading img-caption-swimming-heading">
+                Swimming Pool
+              </p>
+              <p class="img-caption-heading-text img-caption-swimming-text">
+                Have a relaxing time in any of our pools. Smash your body goals
+                swimming while enjoying a breathtaking view of the park.
+              </p>
+              <div class="cta-btn-div">
+                <i class="fas fa-arrow-right"></i>
+              <button class="cta-btn-same">View Gallery</button>
+              </div>
+              <!-- End of cta-btn-div-->
+            </div>
+            <!-- End of img-caption-swimming-div-->
+          </div>
+        </div>
+        <!-- End of first-row-parent-->
+
+        <!-- Start of second-row-parent-->
+        <div class="second-row-parent">
+          <div class="second-row-div-left">
+             <div class="facility-img-div">
+            <img
+              src="/Assets/facilities/movie-theater-one.png"
+              alt=""
+              class="img-same"
+            />
+            </div><!-- End of facilities-img-div-->
+            <div class="img-caption-area img-caption-movie-div">
+              <p class="img-caption-heading img-caption-movie-theater">
+                Movie Theater
+              </p>
+              <p
+                class="img-caption-heading-text img-caption-movie-theater-text"
+              >
+                Our movie auditoriums come with standard screens with rows of
+                comfortable padded seats, as well as a foyer area containing a
+                box office for buying tickets.
+              </p>
+              <div class="cta-btn-div">
+                <i class="fas fa-arrow-right"></i>
+               <button class="cta-btn-same">View Gallery</button>
+              </div>
+              <!-- End of cta-btn-div-->
+            </div>
+            <!-- End of img-caption-movie-div-->
+          </div>
+          <!-- End of first-row-div-left-->
+
+          <div class="second-row-div-right">
+             <div class="facility-img-div">
+            <img
+              src="/Assets/facilities/games-room-one.png"
+              alt=""
+              class="img-same"
+            />
+            </div><!-- End of facilities-img-div-->
+            <div class="img-caption-area img-caption-games-room-div">
+              <p class="img-caption-heading img-caption-games-room-heading">
+                Games Room
+              </p>
+              <p class="img-caption-heading-text img-caption-games-room-text">
+                Our very own recreation room outfitted with game consoles, board
+                and table games as well as a children’s KG and playpen so the
+                little ones don’t feel left out.
+              </p>
+              <div class="cta-btn-div">
+                <div class="arrowicon">
+                <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="view-div">
+                <button class="cta-btn-same">View Gallery</button>
+                </div>
+              </div>
+              <!-- End of cta-btn-div-->
+            </div>
+            <!-- End of img-caption-area-->
+          </div>
+        </div>
+        <!-- End of first-row-parent-->
+
+        <!-- Start of second-row-parent-->
+        <!-- <div class="second-row-parent">
+          <div class="second-row-div-left"></div>
+          <div class="second-row-div-right"></div>
+        </div>
+      </div> -->
+      <!-- End of facilities-landing-->
+    </section>
+
+    <!-- Start of feel-free-to-contact-us section-->
+    <section id="feel-free-to-contact-us">
+      <h4 class="feel-free-heading-text">Feel free to say hello</h4>
+      <div class="feel-free-container">
+        <div class="feel-free-left">
+          <img src="/Assets/homepage/Logo.svg" alt="" class="left-img" />
+          <p class="feel-free-left-text">
+            Perched on the edge of the Wikki Hills, Kigamo commands breathtaking
+            views down the valley that borders the Yankari Game Reserve. Enjoy
+            exclusive game viewing, thrilling night game drives, bush dining,
+            amazing Nigerian culture and old-fashioned safari luxury.
+          </p>
+        </div>
+        <!-- end of feel-free-left-->
+        <div class="feel-free-center">
+          <div class="bauchi">
+            <p class="strong">Address</p>
+            <p>Wikki Camp, Yankari Reserve,</p>
+            <p>Bauchi</p>
+            <p class="strong">Phone</p>
+            <p>+234 803 102 4720</p>
+          </div>
+          <div class="feel-free-email">
+            <p class="strong">Email</p>
+            <p>hello@kigamo.com</p>
+          </div>
+        </div>
+        <!-- End of bauchi-->
+        <!-- End of feel-free-center-->
+        <div class="feel-free-right">
+          <div class="li-div">
+            <ul>
+              <li>About</li>
+              <li>Accessibility</li>
+              <li>Awards</li>
+            </ul>
+
+            <ul>
+              <li>Policies</li>
+              <li>Development</li>
+              <li>Careers</li>
+            </ul>
+
+            <ul>
+              <li>News & Press</li>
+              <li>Videos</li>
+              <li>Covid-19</li>
+            </ul>
+          </div>
+          <!-- End of li-div-->
+          <div class="socialiconsdiv">
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+        <!-- End of feel-free-right-->
+      </div>
+      <!-- End of feel-free-container-->
+    </section>
+    <script src="/scripts/toggle.js"></script>
+  </body>
 </html>

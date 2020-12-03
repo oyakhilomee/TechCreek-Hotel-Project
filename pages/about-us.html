@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/scss/contact-us.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
     <title>Contact Us</title>
   </head>
   <body>
@@ -11,10 +17,15 @@
       <!-- Start of landing-page-->
       <div class="bg-overlay">
         <nav class="navig">
-          <a href="/index.html">
-            <img src="/Assets/homepage/Logo.svg" alt="" />
-          </a>
-          <ul class="navli">
+          <div class="brand-logo-div-nav">
+            <a href="/index.html">
+              <img src="/Assets/homepage/Logo.svg" alt="" />
+            </a>
+          </div>
+          <div class="brand-div toggle-btn" id="toggle-btn">
+            <i class="fa fa-bars fa-2x"></i>
+          </div>
+          <ul id="menu" class="navli d-none">
             <li class="nav-list rooms-nav">
               <a href="/pages/rooms.html" class="nav-a">Rooms</a>
             </li>
@@ -140,5 +151,6 @@
       </div>
       <!-- End of feel-free-container-->
     </section>
+    <script src="/scripts/toggle.js"></script>
   </body>
 </html>
