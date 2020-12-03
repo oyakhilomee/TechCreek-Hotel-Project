@@ -127,6 +127,10 @@ body {
   cursor: pointer;
 }
 
+.fa-calendar-alt {
+  margin-right: 0.6rem;
+}
+
 #landing-page {
   background-image: url(/Assets/homepage/Background.png);
   height: 100vmin;
@@ -452,6 +456,7 @@ body {
 
 .rooms-and-suites-landing-left .rooms-and-rates-header-text {
   font-size: 1.5rem;
+  font-family: tfarrow;
 }
 
 .rooms-and-suites-landing-left .rooms-and-rates-caption-text {
@@ -473,6 +478,16 @@ body {
   color: #f0f0f0;
 }
 
+.book-now:hover {
+  background-color: transparent;
+  border: 0.12rem solid #fe7401;
+  color: #fe7401;
+  -webkit-transition: ease 1s;
+  transition: ease 1s;
+  cursor: pointer;
+  position: absolute;
+}
+
 .btn-view-rooms {
   padding: 0.6rem 0.8rem;
   background-color: transparent;
@@ -485,6 +500,14 @@ body {
   .btn-view-rooms {
     margin-right: 2rem;
   }
+}
+
+.btn-view-rooms:hover {
+  cursor: pointer;
+  background-color: #504026;
+  color: #fff;
+  -webkit-transition: ease 1s;
+  transition: ease 1s;
 }
 
 @media screen and (min-width: 768px) {
@@ -969,6 +992,7 @@ body,
   width: 100%;
   max-width: 70%;
   margin: 1rem auto;
+  outline: none;
 }
 
 .placeholder-center {

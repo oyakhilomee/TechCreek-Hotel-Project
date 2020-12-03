@@ -100,8 +100,17 @@ body {
     border: none;
   }
 }
+
 .reservation-btn:hover {
+  background-color: transparent;
+  border: 0.12rem solid #fe7401;
+  color: #fe7401;
+  transition: ease 1s;
   cursor: pointer;
+}
+
+.fa-calendar-alt {
+  margin-right: 0.6rem;
 }
 
 // Start of Gallery section styling

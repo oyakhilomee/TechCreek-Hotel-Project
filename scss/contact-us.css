@@ -109,18 +109,6 @@ body {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
-  .reservation-btn {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 0.6rem 0.9rem;
-    background-color: #fe7401;
-    color: #f0f0f0;
-    border: none;
-  }
-}
-
 .reservation-btn:hover {
   cursor: pointer;
 }

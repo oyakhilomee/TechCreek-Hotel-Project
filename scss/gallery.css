@@ -124,7 +124,16 @@ body {
 }
 
 .reservation-btn:hover {
+  background-color: transparent;
+  border: 0.12rem solid #fe7401;
+  color: #fe7401;
+  -webkit-transition: ease 1s;
+  transition: ease 1s;
   cursor: pointer;
+}
+
+.fa-calendar-alt {
+  margin-right: 0.6rem;
 }
 
 .gallery-section-heading-div {
