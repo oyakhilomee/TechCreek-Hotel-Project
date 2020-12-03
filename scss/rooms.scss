@@ -88,19 +88,8 @@ body {
   }
 }
 
-.reservation-btn {
-  display: none;
-  @media screen and (min-width: 768px) {
-    display: flex;
-    padding: 0.6rem 0.9rem;
-    background-color: #fe7401;
-    color: #f0f0f0;
-    border: none;
-  }
-}
-
-.reservation-btn:hover {
-  cursor: pointer;
+.fa-calendar-alt {
+  margin-right: 0.6rem;
 }
 
 // Start of rooms-to-let-section styling

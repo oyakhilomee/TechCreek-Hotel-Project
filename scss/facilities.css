@@ -79,9 +79,8 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     padding-top: 1rem;
   }
 }
@@ -108,6 +107,35 @@ body {
 
 .reservation-btn {
   display: none;
+}
+
+.reservation-btn {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .reservation-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0.6rem 0.9rem;
+    background-color: #fe7401;
+    color: #f0f0f0;
+    border: none;
+  }
+}
+
+.reservation-btn:hover {
+  background-color: transparent;
+  border: 0.12rem solid #fe7401;
+  color: #fe7401;
+  -webkit-transition: ease 1s;
+  transition: ease 1s;
+  cursor: pointer;
+}
+
+.fa-calendar-alt {
+  margin-right: 0.6rem;
 }
 
 .img-same {

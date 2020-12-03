@@ -65,7 +65,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-top: 1rem;
   }
 }
@@ -90,6 +90,29 @@ body {
 
 .reservation-btn {
   display: none;
+}
+
+.reservation-btn {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    padding: 0.6rem 0.9rem;
+    background-color: #fe7401;
+    color: #f0f0f0;
+    border: none;
+  }
+}
+
+.reservation-btn:hover {
+  background-color: transparent;
+  border: 0.12rem solid #fe7401;
+  color: #fe7401;
+  transition: ease 1s;
+  cursor: pointer;
+}
+
+.fa-calendar-alt {
+  margin-right: 0.6rem;
 }
 
 // Start of facilities-landing
