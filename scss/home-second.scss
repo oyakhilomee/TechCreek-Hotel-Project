@@ -470,15 +470,13 @@ body {
 .pricing-popular-div {
   display: flex;
   align-items: center;
-  // background-color: green;
   justify-content: space-between;
   width: 90%;
+  margin-top: 2.1rem;
   @media screen and (min-width: 768px) {
     display: flex;
-    // justify-content: center;
     align-items: center;
     justify-content: space-around;
-    // background-color: red;
   }
 }
 
