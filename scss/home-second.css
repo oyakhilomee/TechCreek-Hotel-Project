@@ -279,7 +279,16 @@ body {
 }
 
 .landing-holder .lander-holder-right .horizon {
-  width: 15rem;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .landing-holder .lander-holder-right .horizon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 15rem;
+  }
 }
 
 .landing-holder .lander-holder-right .text-white {
