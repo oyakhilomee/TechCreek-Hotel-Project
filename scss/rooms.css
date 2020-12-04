@@ -113,7 +113,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 27rem;
+  width: 100%;
   max-width: 90%;
   margin: auto;
   margin-top: 2rem;
@@ -124,7 +124,7 @@ body {
 @media screen and (min-width: 768px) {
   .img-all {
     height: 22rem;
-    width: 19rem;
+    width: 100%;
     max-width: 90%;
   }
 }

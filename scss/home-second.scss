@@ -347,6 +347,10 @@ body {
     margin-top: 0;
     // display: flex;
   }
+  .rooms-and-suites-landing-img {
+    width: 100%;
+    max-width: 90%;
+  }
 }
 
 .rooms-and-suites-landing-left {
@@ -494,6 +498,8 @@ body {
   width: 90%;
   height: 33vmin;
   @media screen and (min-width: 768px) {
+    width: 100%;
+    max-width: 80%;
   }
 }
 
@@ -634,8 +640,8 @@ body,
   max-width: 90%;
   margin: auto;
   @media screen and (min-width: 768px) {
-    width: 22rem;
-    max-width: 95%;
+    width: 100%;
+    max-width: 90%;
     height: 18rem;
     object-fit: cover;
   }

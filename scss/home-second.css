@@ -421,6 +421,11 @@ body {
   }
 }
 
+.rooms-and-suites-landing-right .rooms-and-suites-landing-img {
+  width: 100%;
+  max-width: 90%;
+}
+
 .rooms-and-suites-landing-left {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -628,6 +633,13 @@ body {
   height: 33vmin;
 }
 
+@media screen and (min-width: 768px) {
+  .popular-caption-area {
+    width: 100%;
+    max-width: 80%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .popular-caption-area-three {
     height: 42vmin;
@@ -789,8 +801,8 @@ body,
 
 @media screen and (min-width: 768px) {
   .img-facilities {
-    width: 22rem;
-    max-width: 95%;
+    width: 100%;
+    max-width: 90%;
     height: 18rem;
     -o-object-fit: cover;
        object-fit: cover;
